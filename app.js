@@ -117,7 +117,7 @@ const changeSlide = (index) => {
 }
 
 const searchInput = document.getElementById("search");
-searchInput.addEventListener("keypress", function(event) {
+searchInput.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
         searchBtn.click();
